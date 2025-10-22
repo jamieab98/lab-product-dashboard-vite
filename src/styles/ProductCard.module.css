@@ -4,7 +4,7 @@
 }
 
 /* TODO: Add special styling for out-of-stock products */
-.outOfStock{
+.outOfStockClass{
     background-color: red;
 }
 
