@@ -7,3 +7,7 @@
 .outOfStock{
     background-color: red;
 }
+
+.productCard{
+    margin: 10px;
+}

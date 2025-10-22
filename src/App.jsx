@@ -10,17 +10,24 @@ const App = () => {
   ]
 
   // TODO: Implement state to manage filtering
+  const [filter, setFilter] = useState(true)
+
 
   // TODO: Implement logic to filter products based on availability
+  const applyFilter = () => {
+    setFilter(prev => !prev);
+  }
+  const displayProducts = products.filter(product => filter? product.inStock:!product.inStock)
 
   return (
     <div>
-      <h1>{/* TODO: Add 'Product Dashboard' title here */}</h1>
+      <h1>Product Dashboard</h1>
       
       {/* TODO: Add buttons to allow filtering by availability */}
+      <button onClick={applyFilter}>Filter By Availability</button>
 
       {/* TODO: Render the ProductList component and pass filtered products */}
-      <ProductList products={products}/>
+      <ProductList products={displayProducts}/>
       
     </div>
   );
