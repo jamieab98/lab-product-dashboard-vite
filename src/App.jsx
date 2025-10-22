@@ -20,7 +20,7 @@ const App = () => {
       {/* TODO: Add buttons to allow filtering by availability */}
 
       {/* TODO: Render the ProductList component and pass filtered products */}
-      <ProductList/>
+      <ProductList products={products}/>
       
     </div>
   );

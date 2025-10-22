@@ -1,3 +1,9 @@
 /* TODO: Style the product card container */
+.inStock{
+    background-color: rgb(123, 255, 123);
+}
 
 /* TODO: Add special styling for out-of-stock products */
+.outOfStock{
+    background-color: red;
+}

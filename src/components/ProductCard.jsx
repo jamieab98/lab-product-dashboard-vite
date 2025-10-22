@@ -3,14 +3,17 @@ import styles from '../styles/ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   return (
-    <div className>
+    <div className={product.inStock? styles.inStock:styles.outOfStock}>
       {/* TODO: Apply conditional class to <div> above for out-of-stock items */}
       
       {/* TODO: Display product name */}
+      <div>Product Name: {product.name}</div>
 
       {/* TODO: Display product price */}
+      <div>Product Price: {product.price}</div>
 
       {/* TODO: Show if the product is in stock or out of stock */}
+      <div>{product.inStock? "In Stock":"Out of Stock"}</div>
       
     </div>
   );
