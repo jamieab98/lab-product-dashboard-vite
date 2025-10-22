@@ -17,7 +17,7 @@ const App = () => {
   const applyFilter = () => {
     setFilter(prev => !prev);
   }
-  const displayProducts = products.filter(product => filter? product.inStock:!product.inStock)
+  const displayProducts = products.filter(product => filter? product:product.inStock)
 
   return (
     <div>
